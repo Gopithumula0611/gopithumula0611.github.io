@@ -16,7 +16,7 @@ header {
 }
 
 .profile-img {
-    width: 100px; /* Adjust as needed */
+    width: 50px; /* Adjust as needed */
     height: 100px; /* Ensure square shape */
     border-radius: 0; /* Removes circular effect */
 }
