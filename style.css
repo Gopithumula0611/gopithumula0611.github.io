@@ -1,75 +1,98 @@
-/* General Page Styles */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #222;
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
-    padding: 10px 15px;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #444;
-    border-radius: 5px;
-}
-
-/* Profile Section */
-.profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding-top: 60px; /* Adjust for navbar */
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-    margin-right: 30px;
-}
-
-.profile-info {
-    max-width: 400px;
-}
-
-.profile-name {
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.profile-quote {
-    font-size: 16px;
-    font-style: italic;
-    margin-top: 10px;
-    opacity: 0.8;
-}
-
-/* Other Pages */
-.page-content {
-    text-align: center;
-    padding-top: 100px;
-    font-size: 22px;
-}
+/* General Styles */
+ body {
+     background-color: black;
+     background-color: #1e1e1e;
+     color: white;
+     font-family: Arial, sans-serif;
+     text-align: center;
+     margin: 0;
+     padding: 20px;
+     padding: 0;
+     text-align: center;
+ }
+ 
+ .container {
+     max-width: 600px;
+     margin: auto;
+ /* Header Section */
+ header {
+     background-color: black;
+     padding: 40px 20px;
+     text-align: center;
+ }
+ 
+ .profile-pic {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     border: 3px solid white;
+     margin-bottom: 20px;
+     margin-bottom: 15px;
+ }
+ 
+ h1 {
+     color: #00ffcc;
+     font-size: 2em;
+     margin: 5px 0;
+ }
+ 
+ /* Navigation Menu */
+ nav {
+     display: flex;
+     justify-content: center;
+     background-color: #333;
+     padding: 10px;
+ }
+ 
+ nav a {
+     color: white;
+     text-decoration: none;
+     padding: 10px 20px;
+     font-size: 1.2em;
+ }
+ 
+ nav a:hover {
+     background-color: #00ffcc;
+     color: black;
+     border-radius: 5px;
+ }
+ 
+ /* Sections */
+ section {
+     padding: 40px;
+     margin: 20px auto;
+     max-width: 700px;
+     border-radius: 10px;
+ }
+ 
+ #projects { background-color: #2a2a2a; }
+ #papers { background-color: #3a3a3a; }
+ #education { background-color: #2a2a2a; }
+ #contact { background-color: #3a3a3a; }
+ 
+ /* Content Boxes */
+ .content-box {
+     background-color: rgba(255, 255, 255, 0.1);
+     padding: 20px;
+     border-radius: 10px;
+     margin-top: 10px;
+ }
+ 
+ ul {
+     list-style: none;
+     padding: 0;
+ }
+ 
+ ul li {
+     padding: 8px;
+ }
+ 
+ a {
+     color: #00ffcc;
+     text-decoration: none;
+     font-weight: bold;
+ }
+ 
+ a:hover {
+     text-decoration: underline;
+ }
