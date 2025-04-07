@@ -14,7 +14,7 @@ body {
 
 /* Top navigation */
 header {
-  background-color: #004080;
+  background-color: #000000;
   padding: 1rem 2rem;
   color: #fff;
 }
@@ -27,7 +27,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #B2BEB5;
   text-decoration: none;
   font-weight: bold;
 }
