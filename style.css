@@ -1,98 +1,43 @@
-/* General Styles */
- body {
-     background-color: black;
-     background-color: #1e1e1e;
-     color: white;
-     font-family: Arial, sans-serif;
-     text-align: center;
-     margin: 0;
-     padding: 20px;
-     padding: 0;
-     text-align: center;
- }
- 
- .container {
-     max-width: 600px;
-     margin: auto;
- /* Header Section */
- header {
-     background-color: black;
-     padding: 40px 20px;
-     text-align: center;
- }
- 
- .profile-pic {
-     width: 150px;
-     height: 150px;
-     border-radius: 50%;
-     border: 3px solid white;
-     margin-bottom: 20px;
-     margin-bottom: 15px;
- }
- 
- h1 {
-     color: #00ffcc;
-     font-size: 2em;
-     margin: 5px 0;
- }
- 
- /* Navigation Menu */
- nav {
-     display: flex;
-     justify-content: center;
-     background-color: #333;
-     padding: 10px;
- }
- 
- nav a {
-     color: white;
-     text-decoration: none;
-     padding: 10px 20px;
-     font-size: 1.2em;
- }
- 
- nav a:hover {
-     background-color: #00ffcc;
-     color: black;
-     border-radius: 5px;
- }
- 
- /* Sections */
- section {
-     padding: 40px;
-     margin: 20px auto;
-     max-width: 700px;
-     border-radius: 10px;
- }
- 
- #projects { background-color: #2a2a2a; }
- #papers { background-color: #3a3a3a; }
- #education { background-color: #2a2a2a; }
- #contact { background-color: #3a3a3a; }
- 
- /* Content Boxes */
- .content-box {
-     background-color: rgba(255, 255, 255, 0.1);
-     padding: 20px;
-     border-radius: 10px;
-     margin-top: 10px;
- }
- 
- ul {
-     list-style: none;
-     padding: 0;
- }
- 
- ul li {
-     padding: 8px;
- }
- 
- a {
-     color: #00ffcc;
-     text-decoration: none;
-     font-weight: bold;
- }
- 
- a:hover {
-     text-decoration: underline;
- }
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Top navigation */
+header {
+  background-color: #004080;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content area */
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items:
