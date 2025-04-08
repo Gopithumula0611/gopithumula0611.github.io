@@ -9,7 +9,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: url('back.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #333;
+  color: #FFF;
   line-height: 1.6;
 }
 
@@ -17,7 +17,7 @@ body {
 header {
   background-color: #000000;
   padding: 1rem 2rem;
-  color: #fff;
+  color: #FFF;
 }
 
 nav ul {
@@ -64,7 +64,7 @@ nav ul li a:hover {
 }
 
 .profile-pic img {
-  width: 500px;
+  width: 550px;
   height: auto;
   border-radius: 10px;
 }
