@@ -14,8 +14,9 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #000; /* Black background for the page */
-            color: #fff; /* White text for visibility */
+            background: linear-gradient(135deg, #1f1f1f, #333); /* Dark gradient background */
+            color: #fff;
+            overflow-x: hidden;
         }
 
         header {
@@ -23,11 +24,12 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #333; /* Dark background for header */
+            background-color: #333;
             color: white;
             padding: 15px 0;
             text-align: center;
-            z-index: 1000; /* Ensure header is above content */
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for header */
         }
 
         header nav ul {
@@ -44,38 +46,58 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease; /* Smooth transition */
+        }
+
+        header nav ul li a:hover {
+            color: #ff6347; /* Tomato color on hover */
         }
 
         .content {
-            background-color: #222; /* Dark background for content area */
+            background-color: #222;
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             max-width: 800px;
             width: 100%;
             text-align: center;
-            margin-top: 80px; /* Adjust margin to avoid content being hidden behind fixed header */
+            margin-top: 80px;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards; /* Fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         h1 {
             font-size: 2.5rem;
-            color: #ff6347; /* Tomato color for the main title */
+            color: #ff6347; /* Tomato color for main title */
+            margin-bottom: 20px;
         }
 
         h2 {
             font-size: 1.8rem;
-            color: #ff6347; /* Tomato color for section headings */
+            color: #ff6347;
             margin-top: 40px;
+            margin-bottom: 10px;
         }
 
         p {
             font-size: 1.2rem;
             line-height: 1.8;
-            color: #ddd; /* Light grey text for paragraphs */
+            color: #ddd;
         }
 
         .highlight {
-            color: #1e90ff; /* Bright blue for highlighted text */
+            color: #1e90ff;
             font-weight: bold;
         }
 
@@ -87,9 +109,24 @@
 
         ul li {
             font-size: 1.2rem;
-            color: #ddd; /* Light grey for list items */
+            color: #ddd;
             margin-bottom: 10px;
+            transition: transform 0.3s ease;
         }
+
+        ul li:hover {
+            transform: translateX(10px); /* Hover effect for list items */
+            color: #ff6347; /* Change text color on hover */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: #ddd;
+        }
+
     </style>
 </head>
 <body>
@@ -126,6 +163,10 @@
             <li>Oracle Certified Java Programmer</li>
         </ul>
     </section>
+
+    <footer>
+        <p>© 2025 Gopi Thumula | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
