@@ -55,6 +55,13 @@ nav ul li a:hover {
   gap: 2rem;
   padding: 2rem;
 }
+.contact-container {
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: center;       /* vertical centering */
+  height: 100vh;             /* full viewport height */
+  text-align: center;        /* optional: center text inside */
+}
 
 .profile-pic img {
   width: 500px;
