@@ -14,7 +14,8 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: linear-gradient(135deg, #1f1f1f, #333); /* Dark gradient background */
+            background: url('back.jpg') no-repeat center center fixed;
+            background-size: cover; /* Ensure the background image covers the entire viewport */
             color: #fff;
             overflow-x: hidden;
         }
@@ -24,7 +25,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for header */
             color: white;
             padding: 15px 0;
             text-align: center;
@@ -46,7 +47,7 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s ease; /* Smooth transition */
+            transition: color 0.3s ease;
         }
 
         header nav ul li a:hover {
@@ -54,7 +55,7 @@
         }
 
         .content {
-            background-color: #222;
+            background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark background */
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
