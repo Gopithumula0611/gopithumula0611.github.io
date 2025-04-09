@@ -18,23 +18,51 @@ header {
   background-color: #000000;
   padding: 1rem 2rem;
   color: #FFF;
+  position: relative;  /* Added to position the hamburger button */
 }
 
+/* Hide menu items by default */
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   list-style: none;
-  gap: 2rem;
+  gap: 1rem;
+  display: none;  /* Hide menu by default */
+}
+
+nav ul.show {
+  display: flex;  /* Show menu when 'show' class is added */
 }
 
 nav ul li a {
   color: #B2BEB5;
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: block;  /* Show the hamburger button on small screens */
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 4px;
+  background-color: #FFF;
+  margin: 5px 0;
+  transition: 0.3s;
 }
 
 /* Main content area */
@@ -55,12 +83,13 @@ nav ul li a:hover {
   gap: 2rem;
   padding: 2rem;
 }
+
 .contact-container {
   display: flex;
-  justify-content: center;   /* horizontal centering */
-  align-items: center;       /* vertical centering */
-  height: 100vh;             /* full viewport height */
-  text-align: center;        /* optional: center text inside */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
 
 .profile-pic img {
