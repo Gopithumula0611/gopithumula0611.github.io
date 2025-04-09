@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .quote {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    .quote h2 {
+      color: black; /* Quote in black */
+    }
+
+    .quote p {
+      color: #666; /* Ash color for author name */
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="blogs.html">Blogs & Papers</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="blogs.html">Blogs & Papers</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="home">
-        <div class="home-container">
-            <div class="profile-pic">
-                <img src="profile.jpg" alt="My Photo">
-            </div>
-            <div class="quote">
-                <h2>"Code is like humor. When you have to explain it, it’s bad."</h2>
-                <p>- Cory House</p>
-            </div>
-        </div>
-    </section>
+  <section class="home">
+    <div class="home-container">
+      <div class="profile-pic">
+        <img src="profile.jpg" alt="My Photo" />
+      </div>
+      <div class="quote">
+        <h2>"Code is like humor. When you have to explain it, it’s bad."</h2>
+        <p>- Cory House</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
