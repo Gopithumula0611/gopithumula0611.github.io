@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Lucida Handwriting', cursive; /* Updated font-family */
   background: url('back2.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #FFF;
@@ -55,6 +55,7 @@ nav ul li a:hover {
   gap: 2rem;
   padding: 2rem;
 }
+
 .contact-container {
   display: flex;
   justify-content: center;   /* horizontal centering */
