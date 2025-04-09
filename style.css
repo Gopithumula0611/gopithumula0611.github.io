@@ -1,4 +1,4 @@
-/* Reset defaults */
+/* Reset some defaults */
 * {
   margin: 0;
   padding: 0;
@@ -7,72 +7,23 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #000 url('back2.jpg') no-repeat center center fixed;
+  background: url('back2.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #FFF;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
-/* Snowflake animation */
-.snowflake {
-  position: fixed;
-  top: -10px;
-  color: white;
-  font-size: 1em;
-  user-select: none;
-  animation: fall linear infinite;
-  opacity: 0.8;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-@keyframes fall {
-  0% {
-    transform: translateY(-10px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100vh);
-    opacity: 0;
-  }
-}
-
-/* Header */
+/* Top navigation */
 header {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #000000;
   padding: 1rem 2rem;
   color: #FFF;
-  position: relative;
-  z-index: 10;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  height: 3px;
-  width: 25px;
-  background: white;
-  margin: 4px 0;
-}
-
-ul {
-  list-style: none;
 }
 
 nav ul {
   display: flex;
   justify-content: flex-end;
+  list-style: none;
   gap: 2rem;
 }
 
@@ -86,31 +37,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Profile/Home Section */
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.profile-pic img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.3);
-}
-
-.quote {
-  max-width: 800px;
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  color: #FFF;
-}
-
-/* Content wrapper if used */
+/* Main content area */
 .content-wrapper {
   display: flex;
   flex-direction: row;
@@ -120,33 +47,30 @@ nav ul li a:hover {
   padding: 2rem;
 }
 
-/* Contact section center align */
+/* Home section */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
 .contact-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
+  justify-content: center;   /* horizontal centering */
+  align-items: center;       /* vertical centering */
+  height: 100vh;             /* full viewport height */
+  text-align: center;        /* optional: center text inside */
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
+.profile-pic img {
+  width: 550px;
+  height: auto;
+  border-radius: 10px;
+}
 
-  nav ul {
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.95);
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    display: none;
-    padding: 1rem;
-  }
-
-  nav ul.open {
-    display: flex;
-  }
+.quote {
+  max-width: 600px;
+  font-size: 1.2rem;
+  color: #FFF;
 }
