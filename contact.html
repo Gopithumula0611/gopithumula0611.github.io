@@ -5,41 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
-</head>
     <style>
-        /* Apply background image to the body */
-        body {
-            background-image: url('back2.jpg');
-            background-size: cover;
-            background-position: center;
-            font-family: 'Lucida Console', 'Lucida Sans Typewriter', 'Monaco', sans-serif;
-            margin: 0;
-            padding: 0;
+        /* Custom animations and centering for contact content */
+        .content {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        /* Content section styling */
-        .content {
             text-align: center;
-            color: white;
-            padding: 2rem;
-            border-radius: 10px;
+            padding: 4rem 2rem;
             background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 5rem auto;
+            color: white;
             animation: fadeInContent 3s ease-in-out;
-        }
-
-        /* Animation for fade-in effect */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
         }
 
         @keyframes fadeInContent {
@@ -53,6 +33,7 @@
             }
         }
     </style>
+</head>
 <body>
     <header>
         <nav>
@@ -70,7 +51,11 @@
         <h1>Contact Details</h1>
         <p>Email: gopithumula0611.com</p>
         <p>Phone: +1-(475) 302 9381</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/gopi-thumula0611/" target="_blank">https://www.linkedin.com/in/gopi-thumula0611/</a></p>
+        <p>LinkedIn: 
+            <a href="https://www.linkedin.com/in/gopi-thumula0611/" target="_blank">
+                https://www.linkedin.com/in/gopi-thumula0611/
+            </a>
+        </p>
     </section>
 </body>
 </html>
