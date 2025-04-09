@@ -3,148 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: 'Lucida Sans', 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: url('back2.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-            overflow-x: hidden;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for header */
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for header */
-        }
-
-        header nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        header nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        header nav ul li a:hover {
-            color: #ff6347; /* Tomato color on hover */
-        }
-
+        /* Animation and centering only */
         .content {
-            background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark background */
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
-            width: 100%;
+            animation: fadeInContent 2s ease-in-out;
             text-align: center;
-            margin-top: 80px;
-            opacity: 0;
-            animation: fadeIn 1.5s forwards; /* Fade-in animation */
         }
 
-        @keyframes fadeIn {
+        @keyframes fadeInContent {
             0% {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(30px);
             }
             100% {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
-        h1 {
-            font-size: 2.5rem;
-            color: #ff6347; /* Tomato color for main title */
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            color: #ff6347;
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: #ddd;
-        }
-
-        .highlight {
-            color: #1e90ff;
-            font-weight: bold;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-
-        ul li {
-            font-size: 1.2rem;
-            color: #ddd;
-            margin-bottom: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        ul li:hover {
-            transform: translateX(10px); /* Hover effect for list items */
-            color: #ff6347; /* Change text color on hover */
-        }
-
-        footer {
-            position: fixed;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
-            color: #ddd;
-        }
-
-        .about-text {
-            text-align: left;
-            margin: 20px 0;
-        }
-
-        .about-text p {
-            margin-bottom: 15px;
-        }
-
-        .about-text ul li {
-            margin-left: 20px;
-        }
-        
     </style>
 </head>
 <body>
-
     <header>
         <nav>
             <ul>
@@ -157,27 +37,17 @@
         </nav>
     </header>
 
-    <section class="content">
-        <h1>About Me</h1>
-        <div class="about-text">
-            <p>Hello! I'm <span class="highlight">Gopi Thumula</span>, a dedicated and results-driven <strong>Java Full Stack Developer</strong> with over <strong>4 years</strong> of experience in crafting scalable, high-performance web applications. Currently, I hold a <strong>Master's degree in Computer Science</strong> from Sacred Heart University (GPA: 3.8), where I had the privilege to work as a <em>Graduate Teaching Assistant</em> and contribute to cutting-edge research on <strong>machine learning-based malware detection</strong>, which was published at <em>IEEE ICSPIS 2024</em>.</p>
-
-            <p>Throughout my career, I've had the opportunity to work in a variety of environments, including <strong>fintech at Mastercard</strong>, <strong>academic research</strong>, and <strong>enterprise software development at Cognizant</strong>. In each of these roles, I’ve built and delivered modern web applications using technologies such as <strong>Java 11/17</strong>, <strong>Spring Boot</strong>, <strong>Microservices</strong>, <strong>React.js</strong>, <strong>Angular</strong>, and leading cloud platforms like <strong>AWS</strong>, <strong>GCP</strong>, and <strong>Azure</strong>.</p>
-
-            <p><strong>I specialize in:</strong></p>
-            <ul>
-                <li>End-to-end development of scalable, secure, and responsive applications</li>
-                <li>Microservices architecture, CI/CD, and cloud-native deployments</li>
-                <li>Integrating Machine Learning with Java-based tools for cybersecurity applications</li>
-                <li>Front-end development with modern JavaScript frameworks like <strong>React</strong> and <strong>Angular</strong></li>
-                <li>Collaborating in <strong>Agile/Scrum teams</strong> and mentoring peers to deliver quality software</li>
-            </ul>
-
-            <p>I am certified as an <strong>AWS Developer Associate</strong> and an <strong>Oracle Certified Java Programmer</strong>, and I am always excited to learn new technologies. Whether I’m building innovative web platforms or contributing to impactful research, I strive to bring a unique blend of creativity, technical depth, and business focus to everything I do.</p>
-
-            <p><strong>Let’s connect and build something amazing!</strong></p>
+    <section class="contact-container">
+        <div class="content">
+            <h1>Contact Details</h1>
+            <p>Email: gopithumula0611.com</p>
+            <p>Phone: +1-(475) 302 9381</p>
+            <p>LinkedIn: 
+                <a href="https://www.linkedin.com/in/gopi-thumula0611/" target="_blank">
+                    https://www.linkedin.com/in/gopi-thumula0611/
+                </a>
+            </p>
         </div>
     </section>
-
 </body>
 </html>
