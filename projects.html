@@ -6,6 +6,28 @@
   <title>Projects</title>
   <link rel="stylesheet" href="style.css">       <!-- Main styling -->
   <link rel="stylesheet" href="style3.css">      <!-- Snowfall effect -->
+  <style>
+  .flake {
+    position: fixed;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.8;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate(100px, 100vh) rotate(360deg);
+    }
+  }
+</style>
 
   <style>
     .projects-section {
