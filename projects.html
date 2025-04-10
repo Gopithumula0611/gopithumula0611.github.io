@@ -3,26 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .projects-section {
+            padding: 2rem;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .project {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .project img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation delays */
+        .project:nth-child(1) { animation-delay: 0.2s; }
+        .project:nth-child(2) { animation-delay: 0.4s; }
+        .project:nth-child(3) { animation-delay: 0.6s; }
+        .project:nth-child(4) { animation-delay: 0.8s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="education.html">Education</a></li>
-                <li><a href="blogs.html">Papers Published</a></li>
-               <li><a href="projects.html">Projects</a></li>
-              
+                <li><a href="blogs.html">Blogs & Papers</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="content">
-        <h1>About Me</h1>
-        <p>Add your summary here...</p>
+    <section class="projects-section">
+        <div class="projects-container">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <a href="https://yourproject1link.com" target="_blank">Project One</a>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <a href="https://yourproject2link.com" target="_blank">Project Two</a>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <a href="https://yourproject3link.com" target="_blank">Project Three</a>
+            </div>
+            <div class="project">
+                <img src="project4.jpg" alt="Project 4">
+                <a href="https://yourproject4link.com" target="_blank">Project Four</a>
+            </div>
+        </div>
     </section>
 </body>
 </html>
