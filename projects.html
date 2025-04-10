@@ -98,5 +98,27 @@
       </div>
     </div>
   </section>
+  <script>
+  const numFlakes = 50;
+
+  for (let i = 0; i < numFlakes; i++) {
+    const snowflake = document.createElement('div');
+    snowflake.classList.add('flake');
+    
+    // Random starting position
+    snowflake.style.left = Math.random() * 100 + 'vw';
+    snowflake.style.top = Math.random() < 0.5 ? '-10px' : (Math.random() * 100 + 'vh');
+
+    // Random size and animation duration
+    const size = Math.random() * 5 + 2;
+    snowflake.style.width = size + 'px';
+    snowflake.style.height = size + 'px';
+
+    const duration = Math.random() * 5 + 5;
+    snowflake.style.animationDuration = duration + 's';
+
+    document.body.appendChild(snowflake);
+  }
+</script>
 </body>
 </html>
