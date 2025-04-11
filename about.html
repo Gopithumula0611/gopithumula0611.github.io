@@ -6,36 +6,7 @@
   <title>About Me</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Snowflake style */
-    .flake {
-      position: fixed;
-      background: white;
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 1000;
-      opacity: 0.8;
-      animation-name: fall;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-    }
-
-    @keyframes fall {
-      0% {
-        transform: translateY(-10px) rotate(0deg);
-      }
-      100% {
-        transform: translateY(100vh) rotate(360deg);
-      }
-    }
-
-    .quote-section {
-      text-align: center;
-      margin-top: 2rem;
-      color: #00ffc8;
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-
+    /* Animation for About Me section */
     .about-me {
       display: flex;
       flex-direction: column;
@@ -44,7 +15,7 @@
       text-align: center;
       padding: 4rem 2rem;
       max-width: 800px;
-      margin: 2rem auto;
+      margin: 5rem auto;
       background-color: rgba(0, 0, 0, 0.5);
       color: white;
       border-radius: 10px;
@@ -61,23 +32,6 @@
         transform: translateY(0);
       }
     }
-
-    .tech-stack {
-      margin-top: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    .tech-stack img {
-      height: 40px;
-      width: auto;
-      background-color: #fff;
-      padding: 5px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
   </style>
 </head>
 <body>
@@ -93,16 +47,10 @@
     </nav>
   </header>
 
-  <section class="quote-section">
-    <p>"Technology is best when it brings people together."</p>
-    <p>"Code is like humor. When you have to explain it, it’s bad."</p>
-    <p>"Great developers never stop learning."</p>
-  </section>
-
   <section class="about-me">
     <h1>About Me</h1>
     <p>
-      Hello! I'm <strong>Gopi Thumula</strong>, a passionate and skilled <strong>Java Full-Stack Developer</strong> based in USA. With over 4 years of experience in software development, I specialize in building scalable backend systems and responsive front-end interfaces using modern technologies.
+      Hello! I'm <strong>Gopi Thumula</strong>, a passionate and skilled <strong>Java Full-Stack Developer</strong> based in USA. With over 4 years of experience in software development, I specialize in building scalable backend systems and responsive front-end interfaces using modern technologies like Java, Spring Boot, React.js, Angular, and AWS.
     </p>
     <p>
       I recently earned my Master’s degree in Computer Science from <strong>Sacred Heart University</strong> (GPA: 3.8/4.0), where I also worked as a Graduate Teaching Assistant and published research on machine learning-based malware detection at <strong>IEEE ICSPIS 2024</strong>.
@@ -111,51 +59,15 @@
       Professionally, I’ve contributed to high-impact projects at <strong>Mastercard</strong>, where I helped modernize legacy systems using microservices, React.js, and cloud-native architectures. My previous experience at <strong>Cognizant</strong> included enhancing banking platforms with secure APIs, Dockerized deployments, and real-time data processing using Kafka.
     </p>
     <p>
-      My technical toolkit includes:
+      My technical toolkit includes<strong> Java 17, Spring Boot, REST APIs, Kafka, Docker, Kubernetes, MongoDB, AWS, React, Angular, and CI/CD tools like Jenkins and CircleCI</strong>. I’m also certified as an <strong>AWS Developer Associate</strong> and <strong>Oracle Certified Java Programmer</strong>.
     </p>
-
-    <!-- Tech stack icons -->
-    <div class="tech-stack">
-      <img src="icons/java.png" alt="Java" title="Java" />
-      <img src="icons/springboot.png" alt="Spring Boot" title="Spring Boot" />
-      <img src="icons/react.png" alt="React" title="React" />
-      <img src="icons/angular.png" alt="Angular" title="Angular" />
-      <img src="icons/aws.png" alt="AWS" title="AWS" />
-      <img src="icons/kafka.png" alt="Kafka" title="Kafka" />
-      <img src="icons/docker.png" alt="Docker" title="Docker" />
-      <img src="icons/kubernetes.png" alt="Kubernetes" title="Kubernetes" />
-      <img src="icons/mongodb.png" alt="MongoDB" title="MongoDB" />
-      <img src="icons/mysql.png" alt="MySQL" title="MySQL" />
-      <img src="icons/jenkins.png" alt="Jenkins" title="Jenkins" />
-      <img src="icons/circleci.png" alt="CircleCI" title="CircleCI" />
-    </div>
-
     <p>
-      I'm also certified as an <strong>AWS Developer Associate</strong> and <strong>Oracle Certified Java Programmer</strong>. Outside of coding, I'm a problem-solver who enjoys taking on challenges, optimizing systems, and contributing to innovative tech solutions.
+      Outside of coding, I'm a problem-solver who enjoys taking on challenges, optimizing systems, and contributing to innovative tech solutions. 
     </p>
     <p>
       My journey—from a small farming background to building enterprise-grade systems—reflects my dedication, resilience, and hunger to grow in the tech world.
     </p>
     <p><strong>Let’s connect and build something impactful together!</strong></p>
   </section>
-
-  <script>
-    const numFlakes = 40;
-    for (let i = 0; i < numFlakes; i++) {
-      const snowflake = document.createElement('div');
-      snowflake.classList.add('flake');
-      snowflake.style.left = Math.random() * 100 + 'vw';
-      snowflake.style.top = Math.random() * -100 + 'px';
-
-      const size = Math.random() * 5 + 2;
-      snowflake.style.width = size + 'px';
-      snowflake.style.height = size + 'px';
-
-      const duration = Math.random() * 5 + 5;
-      snowflake.style.animationDuration = duration + 's';
-
-      document.body.appendChild(snowflake);
-    }
-  </script>
 </body>
 </html>
