@@ -31,6 +31,13 @@
 
     .projects-section {
       padding: 2rem;
+      text-align: center;
+    }
+
+    .projects-section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #00ffc8;
     }
 
     .projects-container {
@@ -45,9 +52,19 @@
       flex-direction: column;
       align-items: center;
       width: 250px;
+      background-color: rgba(255, 255, 255, 0.03);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       opacity: 0;
       transform: translateY(40px);
       animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 30px rgba(0,255,200,0.2);
     }
 
     .project:nth-child(1) { animation-delay: 0.2s; }
@@ -59,19 +76,35 @@
       width: 100%;
       height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .project a {
       margin-top: 1rem;
       font-size: 1.1rem;
       text-decoration: none;
-      color: #0066cc;
+      color: #00ffc8;
       font-weight: bold;
     }
 
     .project a:hover {
       text-decoration: underline;
+    }
+
+    .tags {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      justify-content: center;
+    }
+
+    .tags span {
+      font-size: 0.75rem;
+      background-color: #111;
+      color: #ccc;
+      padding: 0.2rem 0.5rem;
+      border-radius: 5px;
     }
 
     @keyframes fadeInUp {
@@ -97,22 +130,50 @@
   </header>
 
   <section class="projects-section">
+    <h2>Selected Projects</h2>
+
     <div class="projects-container">
       <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <a href="https://yourproject1link.com" target="_blank">Project One</a>
+        <img src="project1.jpg" alt="Guac Time Web App">
+        <a href="https://yourproject1link.com" target="_blank">Guac Time</a>
+        <div class="tags">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>React</span>
+          <span>MySQL</span>
+        </div>
       </div>
+
       <div class="project">
-        <img src="project2.jpg" alt="Project 2">
-        <a href="https://yourproject2link.com" target="_blank">Project Two</a>
+        <img src="project2.jpg" alt="Local Services Marketplace">
+        <a href="https://yourproject2link.com" target="_blank">Local Marketplace</a>
+        <div class="tags">
+          <span>Microservices</span>
+          <span>AWS</span>
+          <span>Kafka</span>
+          <span>REST API</span>
+        </div>
       </div>
+
       <div class="project">
-        <img src="project3.jpg" alt="Project 3">
-        <a href="https://yourproject3link.com" target="_blank">Project Three</a>
+        <img src="project3.jpg" alt="AI Resume Analyzer">
+        <a href="https://yourproject3link.com" target="_blank">AI Resume Analyzer</a>
+        <div class="tags">
+          <span>Python</span>
+          <span>Flask</span>
+          <span>LLM</span>
+          <span>OpenAI</span>
+        </div>
       </div>
+
       <div class="project">
-        <img src="project4.jpg" alt="Project 4">
-        <a href="https://yourproject4link.com" target="_blank">Project Four</a>
+        <img src="project4.jpg" alt="Your Other Project">
+        <a href="https://yourproject4link.com" target="_blank">Another Project</a>
+        <div class="tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+        </div>
       </div>
     </div>
   </section>
@@ -124,7 +185,6 @@
       const snowflake = document.createElement('div');
       snowflake.classList.add('flake');
 
-      // Random start from top, bottom, or sides
       const fromTop = Math.random() < 0.6;
       if (fromTop) {
         snowflake.style.top = '-10px';
@@ -134,7 +194,6 @@
         snowflake.style.top = Math.random() * 100 + 'vh';
       }
 
-      // Random size and duration
       const size = Math.random() * 5 + 2;
       snowflake.style.width = size + 'px';
       snowflake.style.height = size + 'px';
