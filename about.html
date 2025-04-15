@@ -57,7 +57,7 @@
     .quote {
       font-style: italic;
       background-color: rgba(0, 0, 0, 0.7); /* transparent black */
-      color: #f4f4f4;
+      color: #fff; /* White text for better contrast */
       border-left: 4px solid #aaa;
       padding: 1rem;
       margin-bottom: 2rem;
@@ -117,6 +117,30 @@
       width: 24px;
       height: 24px;
     }
+
+    /* Certifications Section */
+    .certifications {
+      margin-top: 3rem;
+      text-align: center;
+      animation: fadeInContent 2s ease-in-out;
+    }
+
+    .certifications h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #111;
+    }
+
+    .certifications ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .certifications ul li {
+      margin: 0.8rem 0;
+    }
   </style>
 </head>
 <body>
@@ -136,9 +160,12 @@
     <h1>About Me</h1>
 
     <div class="quote">
-      <p>Hello! I'm <strong>Gopi Thumula</strong>, a passionate and skilled <strong>Java Full-Stack Developer</strong> based in USA. With over 4 years of experience in software development, I specialize in building scalable backend systems and responsive front-end interfaces.</p>
+      <p>"Code is like humor. When you have to explain it, it’s bad." – Cory House</p>
     </div>
 
+    <p>
+      Hello! I'm <strong>Gopi Thumula</strong>, a passionate and skilled <strong>Java Full-Stack Developer</strong> based in USA. With over 4 years of experience in software development, I specialize in building scalable backend systems and responsive front-end interfaces using modern technologies like Java, Spring Boot, React.js, Angular, and AWS.
+    </p>
     <p>
       I recently earned my Master’s degree in Computer Science from <strong>Sacred Heart University</strong> (GPA: 3.8/4.0), where I also worked as a Graduate Teaching Assistant and published research on machine learning-based malware detection at <strong>IEEE ICSPIS 2024</strong>.
     </p>
@@ -159,9 +186,14 @@
       <span><img src="icons/kafka.png" alt="Kafka">Kafka</span>
     </div>
 
-    <p>
-      My technical toolkit includes technologies like Java, Spring Boot, REST APIs, Kafka, Docker, Kubernetes, MongoDB, AWS, React, Angular, and CI/CD tools like Jenkins and CircleCI. I’m also certified as an <strong>AWS Developer Associate</strong> and <strong>Oracle Certified Java Programmer</strong>.
-    </p>
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <ul>
+        <li>AWS Developer Associate</li>
+        <li>Oracle Certified Java Programmer</li>
+      </ul>
+    </div>
+
     <p>
       Outside of coding, I'm a problem-solver who enjoys taking on challenges, optimizing systems, and contributing to innovative tech solutions. 
     </p>
