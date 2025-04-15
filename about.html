@@ -30,19 +30,44 @@
     }
 
     /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+    }
+
+    header {
+      padding: 1rem;
+      background-color: #f8f8f8;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+    }
+
     .about-me {
-      padding: 4rem 2rem;
+      padding: 2rem 1rem;
       max-width: 1000px;
-      margin: 3rem auto;
+      margin: 2rem auto 1rem auto;
       text-align: center;
       animation: fadeInContent 1.5s ease-in-out;
     }
 
     .about-me h1 {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       font-size: 2.5rem;
       color: #111;
-      animation: fadeInContent 2s ease-in-out;
     }
 
     .about-me p {
@@ -50,28 +75,23 @@
       line-height: 1.8;
       color: #444;
       margin: 1rem 0;
-      animation: fadeInContent 2s ease-in-out;
     }
 
-    /* Quote Styles */
     blockquote {
       font-style: italic;
-      color: #888; /* Ash color */
+      color: #888;
       font-family: 'Lucida Sans', sans-serif;
       margin-bottom: 2rem;
       padding: 1rem;
       border-left: 4px solid #aaa;
-      animation: fadeInContent 2s ease-in-out;
     }
 
-    /* Tech Stack Section */
     .tech-icons {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
       margin-bottom: 2rem;
-      animation: fadeInContent 2.5s ease-in-out;
     }
 
     .tech-icons span {
@@ -82,44 +102,28 @@
       padding: 0.5rem 1rem;
       border-radius: 8px;
       font-weight: 500;
-      color: #333;
-      opacity: 0;
+      color: #000; /* Changed to black */
       animation: zoomIn 1s ease-in-out forwards;
+      opacity: 0;
     }
 
-    .tech-icons span:nth-child(1) {
-      animation-delay: 0.2s;
-    }
-    .tech-icons span:nth-child(2) {
-      animation-delay: 0.4s;
-    }
-    .tech-icons span:nth-child(3) {
-      animation-delay: 0.6s;
-    }
-    .tech-icons span:nth-child(4) {
-      animation-delay: 0.8s;
-    }
-    .tech-icons span:nth-child(5) {
-      animation-delay: 1s;
-    }
-    .tech-icons span:nth-child(6) {
-      animation-delay: 1.2s;
-    }
-    .tech-icons span:nth-child(7) {
-      animation-delay: 1.4s;
-    }
-    .tech-icons span:nth-child(8) {
-      animation-delay: 1.6s;
-    }
+    .tech-icons span:nth-child(1) { animation-delay: 0.2s; }
+    .tech-icons span:nth-child(2) { animation-delay: 0.4s; }
+    .tech-icons span:nth-child(3) { animation-delay: 0.6s; }
+    .tech-icons span:nth-child(4) { animation-delay: 0.8s; }
+    .tech-icons span:nth-child(5) { animation-delay: 1s; }
+    .tech-icons span:nth-child(6) { animation-delay: 1.2s; }
+    .tech-icons span:nth-child(7) { animation-delay: 1.4s; }
+    .tech-icons span:nth-child(8) { animation-delay: 1.6s; }
+    .tech-icons span:nth-child(9) { animation-delay: 1.8s; }
 
     .tech-icons img {
       width: 24px;
       height: 24px;
     }
 
-    /* Certifications Section */
     .certifications {
-      margin-top: 3rem;
+      margin-top: 2rem;
       text-align: center;
       animation: fadeInContent 2s ease-in-out;
     }
@@ -134,7 +138,7 @@
       list-style-type: none;
       padding: 0;
       font-size: 1.1rem;
-      color: #444;
+      color: #000; /* Changed to black */
     }
 
     .certifications ul li {
