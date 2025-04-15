@@ -4,60 +4,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me</title>
-
-  <!-- External CSS file -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Font Awesome for tech icons -->
-  <script src="https://kit.fontawesome.com/a2e0e6f56e.js" crossorigin="anonymous"></script>
-
   <style>
+    body {
+      background-color: #f4f4f4;
+      color: #222;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      list-style-type: none;
+      padding: 1rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      margin: 0;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+    }
+
+    .about-me {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .about-me h1 {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: #111;
+    }
+
+    .about-me p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+      margin: 1rem 0;
+    }
+
     .quote {
       font-style: italic;
-      border-left: 4px solid #333;
-      padding-left: 1rem;
-      margin: 2rem 0;
-      background: #f0f0f0;
+      background-color: #eee;
+      color: #333;
+      border-left: 4px solid #aaa;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
     }
 
-    .about-section {
-      margin-top: 2rem;
-    }
-
-    .about-section h2 {
-      font-size: 1.6rem;
-      color: #222;
-      margin-bottom: 0.5rem;
-      border-bottom: 2px solid #333;
+    .about-me h2 {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      color: #111;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #ccc;
       display: inline-block;
-      padding-bottom: 0.3rem;
     }
 
     .tech-icons {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      margin-top: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
     }
 
     .tech-icons span {
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      background: #eaeaea;
+      background-color: #f1f1f1;
       padding: 0.5rem 1rem;
       border-radius: 8px;
-      font-size: 1rem;
+      font-weight: 500;
+      color: #333;
     }
 
-    .tech-icons i {
-      font-size: 1.5rem;
-      color: #333;
+    .tech-icons img {
+      width: 24px;
+      height: 24px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <nav>
       <ul>
@@ -74,45 +114,39 @@
     <h1>About Me</h1>
 
     <div class="quote">
-      Hello! I'm <strong>Gopi Thumula</strong>, a passionate and skilled <strong>Java Full-Stack Developer</strong> based in the USA. With over 4 years of experience, I thrive on building scalable systems and user-friendly UIs.
+      <p>Hello! I'm <strong>Gopi Thumula</strong>, a passionate and skilled <strong>Java Full-Stack Developer</strong> based in USA. With over 4 years of experience in software development, I specialize in building scalable backend systems and responsive front-end interfaces.</p>
     </div>
 
-    <div class="about-section">
-      <h2>Professional Journey</h2>
-      <p>I earned my Master’s in Computer Science from <strong>Sacred Heart University</strong> (GPA: 3.8), where I was also a Graduate Teaching Assistant. I presented my research on malware detection at <strong>IEEE ICSPIS 2024</strong>.</p>
+    <p>
+      I recently earned my Master’s degree in Computer Science from <strong>Sacred Heart University</strong> (GPA: 3.8/4.0), where I also worked as a Graduate Teaching Assistant and published research on machine learning-based malware detection at <strong>IEEE ICSPIS 2024</strong>.
+    </p>
+    <p>
+      Professionally, I’ve contributed to high-impact projects at <strong>Mastercard</strong>, where I helped modernize legacy systems using microservices, React.js, and cloud-native architectures. My previous experience at <strong>Cognizant</strong> included enhancing banking platforms with secure APIs, Dockerized deployments, and real-time data processing using Kafka.
+    </p>
 
-      <p>I contributed to enterprise projects at <strong>Mastercard</strong> and <strong>Cognizant</strong>, modernizing systems using Microservices, React.js, Kafka, and AWS cloud tools.</p>
+    <h2>Tech Stack</h2>
+    <div class="tech-icons">
+      <span><img src="icons/java.png" alt="Java">Java 17</span>
+      <span><img src="icons/spring.png" alt="Spring Boot">Spring Boot</span>
+      <span><img src="icons/restapi.png" alt="REST API">REST APIs</span>
+      <span><img src="icons/react.png" alt="React">React</span>
+      <span><img src="icons/angular.png" alt="Angular">Angular</span>
+      <span><img src="icons/aws.png" alt="AWS">AWS</span>
+      <span><img src="icons/mongodb.png" alt="MongoDB">MongoDB</span>
+      <span><img src="icons/docker.png" alt="Docker">Docker</span>
+      <span><img src="icons/kafka.png" alt="Kafka">Kafka</span>
     </div>
 
-    <div class="about-section">
-      <h2>Tech Stack</h2>
-      <div class="tech-icons">
-        <span><i class="fab fa-java"></i> Java 17</span>
-        <span><i class="fas fa-leaf"></i> Spring Boot</span>
-        <span><i class="fas fa-network-wired"></i> REST APIs</span>
-        <span><i class="fab fa-react"></i> React</span>
-        <span><i class="fab fa-angular"></i> Angular</span>
-        <span><i class="fab fa-aws"></i> AWS</span>
-        <span><i class="fas fa-database"></i> MongoDB</span>
-        <span><i class="fab fa-docker"></i> Docker</span>
-        <span><i class="fas fa-stream"></i> Kafka</span>
-        <span><i class="fas fa-code-branch"></i> Git & CI/CD</span>
-      </div>
-    </div>
-
-    <div class="about-section">
-      <h2>Certifications</h2>
-      <p><strong>AWS Developer Associate</strong></p>
-      <p><strong>Oracle Certified Java Programmer</strong></p>
-    </div>
-
-    <div class="about-section">
-      <h2>Beyond Tech</h2>
-      <p>Outside of coding, I love solving complex problems, optimizing systems, and contributing to impactful tech. Coming from a humble farming background, I bring dedication, resilience, and a deep hunger for learning and innovation.</p>
-    </div>
-
+    <p>
+      My technical toolkit includes technologies like Java, Spring Boot, REST APIs, Kafka, Docker, Kubernetes, MongoDB, AWS, React, Angular, and CI/CD tools like Jenkins and CircleCI. I’m also certified as an <strong>AWS Developer Associate</strong> and <strong>Oracle Certified Java Programmer</strong>.
+    </p>
+    <p>
+      Outside of coding, I'm a problem-solver who enjoys taking on challenges, optimizing systems, and contributing to innovative tech solutions. 
+    </p>
+    <p>
+      My journey—from a small farming background to building enterprise-grade systems—reflects my dedication, resilience, and hunger to grow in the tech world.
+    </p>
     <p><strong>Let’s connect and build something impactful together!</strong></p>
   </section>
-
 </body>
 </html>
