@@ -22,15 +22,21 @@
       }
     }
 
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .content {
       text-align: center;
       color: black;
-    }
-
-    .content ul {
-      display: inline-block;
-      text-align: left;
-      margin-top: 20px;
+      padding: 2rem;
     }
 
     .edu-container {
@@ -61,16 +67,32 @@
       color: #444;
     }
 
+    .certifications-section {
+      margin-top: 4rem;
+      animation: slideUp 2s ease-in-out;
+    }
+
+    .certifications-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: #222;
+      animation: slideUp 1.2s ease-in-out;
+    }
+
     .certifications {
-      margin-top: 2rem;
-      animation: fadeIn 2s ease-in-out;
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      animation: slideUp 1.6s ease-in-out;
     }
 
     .certifications li {
-      margin: 0.8rem 0;
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.8rem;
     }
 
     .cert-logo {
@@ -78,6 +100,16 @@
       height: 32px;
       border-radius: 8px;
       object-fit: cover;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -98,7 +130,7 @@
   <section class="content fadeInContent">
     <h1>Education</h1>
 
-    <!-- Sacred Heart: side-by-side -->
+    <!-- Sacred Heart Section -->
     <div class="edu-container">
       <div class="edu-text">
         <p>
@@ -108,33 +140,39 @@
           <em>Coursework:</em> Analysis of Algorithms, Cloud Security, Network Systems, Ethical Hacking, Web-Based Application Development
         </p>
       </div>
-      <img class="edu-img" src= sacredheart.jpg alt="Sacred Heart University" />
+      <img class="edu-img" src= sacredheart.png alt="Sacred Heart University" />
     </div>
 
-    <!-- TKR college below -->
+    <!-- Spacer -->
+    <div style="height: 2rem;"></div>
+
+    <!-- TKR College Section -->
     <div class="edu-container">
-      <div class = "edu-text">
-      <p>
-        <span class="highlight">TKR College of Engineering and Technology</span>, Hyderabad, India <br />
-        <strong>Bachelor of Technology in Electrical Engineering</strong> (GPA: 3.8/4.0) <br />
-        <strong>Aug 2018 – Jun 2022</strong><br />
-        <em>Coursework:</em> Embedded Systems, Cyber-Physical Systems & Security, AI & ML for Electronics, Communication and Networking
-      </p>
+      <div class="edu-text">
+        <p>
+          <span class="highlight">TKR College of Engineering and Technology</span>, Hyderabad, India <br />
+          <strong>Bachelor of Technology in Electrical Engineering</strong> (GPA: 3.8/4.0) <br />
+          <strong>Aug 2018 – Jun 2022</strong><br />
+          <em>Coursework:</em> Embedded Systems, Cyber-Physical Systems & Security, AI & ML for Electronics, Communication and Networking
+        </p>
+      </div>
+      <img class="edu-img" src="tkr.png" alt="TKR College" />
     </div>
-      <img class="edu-img" src= tkr.png alt="TKR College" />
 
-    <!-- Certifications -->
-    <h2>Certifications</h2>
-    <ul class="certifications">
-      <li>
-        <img class="cert-logo" src="icons/aws.png" alt="AWS Logo" />
-        <a href="verify.html">AWS Certified Developer – Associate</a>
-      </li>
-      <li>
-        <img class="cert-logo" src="icons/java.png" alt="Java Logo" />
-        <a href="verify2.html">Oracle Certified Java Programmer</a>
-      </li>
-    </ul>
+    <!-- Certifications Section -->
+    <div class="certifications-section">
+      <h2>Certifications</h2>
+      <ul class="certifications">
+        <li>
+          <img class="cert-logo" src="icons/aws.png" alt="AWS Logo" />
+          <a href="verify.html">AWS Certified Developer – Associate</a>
+        </li>
+        <li>
+          <img class="cert-logo" src="icons/java.png" alt="Java Logo" />
+          <a href="verify2.html">Oracle Certified Java Programmer</a>
+        </li>
+      </ul>
+    </div>
   </section>
 
 </body>
