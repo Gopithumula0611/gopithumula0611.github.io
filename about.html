@@ -10,7 +10,7 @@
     @keyframes fadeInContent {
       0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(40px);
       }
       100% {
         opacity: 1;
@@ -18,9 +18,9 @@
       }
     }
 
-    @keyframes zoomIn {
+    @keyframes pulseIn {
       0% {
-        transform: scale(0.5);
+        transform: scale(0.95);
         opacity: 0;
       }
       100% {
@@ -59,15 +59,32 @@
     .about-me {
       padding: 2rem 1rem;
       max-width: 1000px;
-      margin: 2rem auto 1rem auto;
+      margin: 2rem auto;
       text-align: center;
-      animation: fadeInContent 1.5s ease-in-out;
+      animation: fadeInContent 1.2s ease-out;
+    }
+
+    .profile-photo {
+      margin: 1rem auto 2rem;
+      width: 130px;
+      height: 160px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      animation: pulseIn 1s ease-in-out;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
     }
 
     .about-me h1 {
-      margin-bottom: 1.5rem;
       font-size: 2.5rem;
       color: #111;
+      margin-bottom: 1rem;
     }
 
     .about-me p {
@@ -94,35 +111,30 @@
       margin-bottom: 2rem;
     }
 
-    .tech-icons .tech-item {
+    .tech-item {
       display: flex;
       flex-direction: column;
       align-items: center;
-      animation: zoomIn 1s ease-in-out forwards;
+      animation: pulseIn 1s ease-in-out;
       opacity: 0;
+      animation-fill-mode: forwards;
     }
 
-    .tech-icons .tech-item img {
-      width: 150px;
-      height: 150px;
+    .tech-item img {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
     }
 
-    .tech-icons .tech-item span {
+    .tech-item span {
       margin-top: 0.5rem;
       font-size: 0.9rem;
       font-weight: 500;
       color: #000;
     }
 
-    .tech-icons .tech-item:nth-child(1) { animation-delay: 0.2s; }
-    .tech-icons .tech-item:nth-child(2) { animation-delay: 0.4s; }
-    .tech-icons .tech-item:nth-child(3) { animation-delay: 0.6s; }
-    .tech-icons .tech-item:nth-child(4) { animation-delay: 0.8s; }
-    .tech-icons .tech-item:nth-child(5) { animation-delay: 1s; }
-    .tech-icons .tech-item:nth-child(6) { animation-delay: 1.2s; }
-    .tech-icons .tech-item:nth-child(7) { animation-delay: 1.4s; }
-    .tech-icons .tech-item:nth-child(8) { animation-delay: 1.6s; }
-    .tech-icons .tech-item:nth-child(9) { animation-delay: 1.8s; }
+    .tech-icons .tech-item:nth-child(odd) { animation-delay: 0.4s; }
+    .tech-icons .tech-item:nth-child(even) { animation-delay: 0.6s; }
 
     .certifications {
       margin-top: 2rem;
@@ -162,23 +174,19 @@
   </header>
 
   <section class="about-me">
+    <div class="profile-photo">
+      <img src="images/profile.jpg" alt="Gopi Thumula" />
+    </div>
     <h1>About Me</h1>
 
     <blockquote>
-      <p>
-        Hello! I'm <strong>Gopi Thumula</strong>, a passionate and skilled <strong>Java Full-Stack Developer</strong> based in USA. With over 4 years of experience in software development, I specialize in building scalable backend systems and responsive front-end interfaces using modern technologies like Java, Spring Boot, React.js, Angular, and AWS.
-      </p>
-      <p>
-        I recently earned my Master’s degree in Computer Science from <strong>Sacred Heart University</strong> (GPA: 3.8/4.0), where I also worked as a Graduate Teaching Assistant and published research on machine learning-based malware detection at <strong>IEEE ICSPIS 2024</strong>.
-      </p>
-      <p>
-        Professionally, I’ve contributed to high-impact projects at <strong>Mastercard</strong>, where I helped modernize legacy systems using microservices, React.js, and cloud-native architectures. My previous experience at <strong>Cognizant</strong> included enhancing banking platforms with secure APIs, Dockerized deployments, and real-time data processing using Kafka.
-      </p>
+      <p>Hello! I'm <strong>Gopi Thumula</strong>, a passionate and skilled <strong>Java Full-Stack Developer</strong> based in the USA...</p>
+      <!-- rest of your intro blockquote stays the same -->
     </blockquote>
 
     <h2>Tech Stack</h2>
     <div class="tech-icons">
-      <div class="tech-item"><img src=java..png alt="Java"><span>Java 21</span></div>
+      <div class="tech-item"><img src="icons/java.png" alt="Java"><span>Java 21</span></div>
       <div class="tech-item"><img src="icons/spring.png" alt="Spring Boot"><span>Spring Boot</span></div>
       <div class="tech-item"><img src="icons/restapi.png" alt="REST API"><span>REST APIs</span></div>
       <div class="tech-item"><img src="icons/react.png" alt="React"><span>React</span></div>
@@ -197,12 +205,8 @@
       </ul>
     </div>
 
-    <p>
-      Outside of coding, I'm a problem-solver who enjoys taking on challenges, optimizing systems, and contributing to innovative tech solutions. 
-    </p>
-    <p>
-      My journey—from a small farming background to building enterprise-grade systems—reflects my dedication, resilience, and hunger to grow in the tech world.
-    </p>
+    <p>Outside of coding, I'm a problem-solver who enjoys taking on challenges...</p>
+    <p>My journey—from a small farming background to building enterprise-grade systems...</p>
     <p><strong>Let’s connect and build something impactful together!</strong></p>
   </section>
 </body>
