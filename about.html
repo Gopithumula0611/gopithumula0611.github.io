@@ -38,7 +38,7 @@
 
     header {
       padding: 1rem;
-      background-color: #000; /* Changed to black */
+      background-color: #000;
     }
 
     nav ul {
@@ -52,7 +52,7 @@
 
     nav ul li a {
       text-decoration: none;
-      color: #fff; /* White text for contrast on black */
+      color: #fff;
       font-weight: bold;
     }
 
@@ -67,7 +67,7 @@
     .about-me h1 {
       margin-bottom: 1.5rem;
       font-size: 2.5rem;
-      color: #111; /* Keep heading black */
+      color: #111;
     }
 
     .about-me p {
@@ -89,38 +89,40 @@
     .tech-icons {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 2rem;
       justify-content: center;
       margin-bottom: 2rem;
     }
 
-    .tech-icons span {
+    .tech-icons .tech-item {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 0.5rem;
-      background-color: #f1f1f1;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      font-weight: 500;
-      color: #000; /* Text color black */
       animation: zoomIn 1s ease-in-out forwards;
       opacity: 0;
     }
 
-    .tech-icons span:nth-child(1) { animation-delay: 0.2s; }
-    .tech-icons span:nth-child(2) { animation-delay: 0.4s; }
-    .tech-icons span:nth-child(3) { animation-delay: 0.6s; }
-    .tech-icons span:nth-child(4) { animation-delay: 0.8s; }
-    .tech-icons span:nth-child(5) { animation-delay: 1s; }
-    .tech-icons span:nth-child(6) { animation-delay: 1.2s; }
-    .tech-icons span:nth-child(7) { animation-delay: 1.4s; }
-    .tech-icons span:nth-child(8) { animation-delay: 1.6s; }
-    .tech-icons span:nth-child(9) { animation-delay: 1.8s; }
-
-    .tech-icons img {
+    .tech-icons .tech-item img {
       width: 24px;
       height: 24px;
     }
+
+    .tech-icons .tech-item span {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #000;
+    }
+
+    .tech-icons .tech-item:nth-child(1) { animation-delay: 0.2s; }
+    .tech-icons .tech-item:nth-child(2) { animation-delay: 0.4s; }
+    .tech-icons .tech-item:nth-child(3) { animation-delay: 0.6s; }
+    .tech-icons .tech-item:nth-child(4) { animation-delay: 0.8s; }
+    .tech-icons .tech-item:nth-child(5) { animation-delay: 1s; }
+    .tech-icons .tech-item:nth-child(6) { animation-delay: 1.2s; }
+    .tech-icons .tech-item:nth-child(7) { animation-delay: 1.4s; }
+    .tech-icons .tech-item:nth-child(8) { animation-delay: 1.6s; }
+    .tech-icons .tech-item:nth-child(9) { animation-delay: 1.8s; }
 
     .certifications {
       margin-top: 2rem;
@@ -131,14 +133,14 @@
     .certifications h2 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
-      color: #111; /* Heading in black */
+      color: #111;
     }
 
     .certifications ul {
       list-style-type: none;
       padding: 0;
       font-size: 1.1rem;
-      color: #000; /* Text in black */
+      color: #000;
     }
 
     .certifications ul li {
@@ -176,15 +178,15 @@
 
     <h2>Tech Stack</h2>
     <div class="tech-icons">
-      <span><img src=java..png alt="Java">Java 21</span>
-      <span><img src="icons/spring.png" alt="Spring Boot">Spring Boot</span>
-      <span><img src="icons/restapi.png" alt="REST API">REST APIs</span>
-      <span><img src="icons/react.png" alt="React">React</span>
-      <span><img src="icons/angular.png" alt="Angular">Angular</span>
-      <span><img src="icons/aws.png" alt="AWS">AWS</span>
-      <span><img src="icons/mongodb.png" alt="MongoDB">MongoDB</span>
-      <span><img src="icons/docker.png" alt="Docker">Docker</span>
-      <span><img src="icons/kafka.png" alt="Kafka">Kafka</span>
+      <div class="tech-item"><img src="icons/java.png" alt="Java"><span>Java 21</span></div>
+      <div class="tech-item"><img src="icons/spring.png" alt="Spring Boot"><span>Spring Boot</span></div>
+      <div class="tech-item"><img src="icons/restapi.png" alt="REST API"><span>REST APIs</span></div>
+      <div class="tech-item"><img src="icons/react.png" alt="React"><span>React</span></div>
+      <div class="tech-item"><img src="icons/angular.png" alt="Angular"><span>Angular</span></div>
+      <div class="tech-item"><img src="icons/aws.png" alt="AWS"><span>AWS</span></div>
+      <div class="tech-item"><img src="icons/mongodb.png" alt="MongoDB"><span>MongoDB</span></div>
+      <div class="tech-item"><img src="icons/docker.png" alt="Docker"><span>Docker</span></div>
+      <div class="tech-item"><img src="icons/kafka.png" alt="Kafka"><span>Kafka</span></div>
     </div>
 
     <h2>Certifications</h2>
