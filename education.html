@@ -85,19 +85,21 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      gap: 2rem;
       animation: slideUp 1.6s ease-in-out;
     }
 
     .certifications li {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 0.8rem;
+      width: 100%;
+      max-width: 700px;
     }
 
     .cert-logo {
-      width: 32px;
-      height: 32px;
+      width: 192px;
+      height: 192px;
       border-radius: 8px;
       object-fit: cover;
     }
@@ -140,7 +142,7 @@
           <em>Coursework:</em> Analysis of Algorithms, Cloud Security, Network Systems, Ethical Hacking, Web-Based Application Development
         </p>
       </div>
-      <img class="edu-img" src= sacredheart.png alt="Sacred Heart University" />
+      <img class="edu-img" src="sacredheart.png" alt="Sacred Heart University" />
     </div>
 
     <!-- Spacer -->
@@ -164,12 +166,12 @@
       <h2>Certifications</h2>
       <ul class="certifications">
         <li>
+          <span style="font-weight: bold; font-size: 1.2rem;">AWS Certified Developer – Associate</span>
           <img class="cert-logo" src="aws.png" alt="AWS Logo" />
-          <a href="verify.html">AWS Certified Developer – Associate</a>
         </li>
         <li>
+          <span style="font-weight: bold; font-size: 1.2rem;">Oracle Certified Java Programmer</span>
           <img class="cert-logo" src="jc.png" alt="Java Logo" />
-          <a href="verify2.html">Oracle Certified Java Programmer</a>
         </li>
       </ul>
     </div>
