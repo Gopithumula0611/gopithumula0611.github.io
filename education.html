@@ -6,7 +6,6 @@
   <title>Education</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Only animation, no layout override */
     .fadeInContent {
       opacity: 0;
       animation: fadeIn 2s ease-in-out forwards;
@@ -23,16 +22,62 @@
       }
     }
 
-    /* Center text inside content */
     .content {
       text-align: center;
-      color: Black; 
+      color: black;
     }
 
     .content ul {
       display: inline-block;
       text-align: left;
       margin-top: 20px;
+    }
+
+    .edu-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .edu-text {
+      max-width: 500px;
+      text-align: left;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .edu-img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #444;
+    }
+
+    .certifications {
+      margin-top: 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .certifications li {
+      margin: 0.8rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .cert-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -44,7 +89,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="education.html">Education</a></li>
-        <li><a href="blogs.html">Papers Published </a></li>
+        <li><a href="blogs.html">Papers Published</a></li>
         <li><a href="projects.html">Projects</a></li>
       </ul>
     </nav>
@@ -52,24 +97,41 @@
 
   <section class="content fadeInContent">
     <h1>Education</h1>
-    <div>
-      <p><span class="highlight">Sacred Heart University</span>, Fairfield, CT <br />
-        <strong>Master of Science in Computer Science</strong> (GPA: 3.8/4.0) <br />
-        <strong>Mar 2023 – May 2024</strong><br />
-        <em>Coursework:</em> Analysis of Algorithms, Cloud Security, Network Systems, Ethical Hacking, Web-Based Application Development
-      </p>
 
-      <p><span class="highlight">TKR College of Engineering and Technology</span>, Hyderabad, India <br />
+    <!-- Sacred Heart: side-by-side -->
+    <div class="edu-container">
+      <div class="edu-text">
+        <p>
+          <span class="highlight">Sacred Heart University</span>, Fairfield, CT <br />
+          <strong>Master of Science in Computer Science</strong> (GPA: 3.8/4.0) <br />
+          <strong>Mar 2023 – May 2024</strong><br />
+          <em>Coursework:</em> Analysis of Algorithms, Cloud Security, Network Systems, Ethical Hacking, Web-Based Application Development
+        </p>
+      </div>
+      <img class="edu-img" src=sacredheart.png alt="Sacred Heart University" />
+    </div>
+
+    <!-- TKR college below -->
+    <div style="margin-top: 2rem;">
+      <p>
+        <span class="highlight">TKR College of Engineering and Technology</span>, Hyderabad, India <br />
         <strong>Bachelor of Technology in Electrical Engineering</strong> (GPA: 3.8/4.0) <br />
         <strong>Aug 2018 – Jun 2022</strong><br />
         <em>Coursework:</em> Embedded Systems, Cyber-Physical Systems & Security, AI & ML for Electronics, Communication and Networking
       </p>
     </div>
 
+    <!-- Certifications -->
     <h2>Certifications</h2>
-    <ul>
-      <li><a href="verify.html">AWS Certified Developer – Associate</a></li>
-      <li>Oracle Certified Java Programmer</li>
+    <ul class="certifications">
+      <li>
+        <img class="cert-logo" src="icons/aws.png" alt="AWS Logo" />
+        <a href="verify.html">AWS Certified Developer – Associate</a>
+      </li>
+      <li>
+        <img class="cert-logo" src="icons/java.png" alt="Java Logo" />
+        Oracle Certified Java Programmer
+      </li>
     </ul>
   </section>
 
